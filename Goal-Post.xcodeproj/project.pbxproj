@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0EAE386BC91457C439F0868F6992AF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E2662D1CEE022A9E89FD18BB9E221 /* AppDelegate.swift */; };
 		B42DAACC4B43BE849B7A96B212AC02A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2D3CC404503D5C81F29B820FD4B9D5 /* Assets.xcassets */; };
+		FC43901BCC30696E929511A57B99B154 /* CreateGoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B5CB0FBBEA0A1FBDDFB82DCAD37FB3A /* CreateGoalViewController.swift */; };
 		5479761FD0F30C5BDA195A9946518514 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28382650AC25D75DB77EC4C7950DB8D /* GoalCell.swift */; };
 		8719D2C0845659528FDC7CA29C9C5097 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57E1E9A7FB0E0FDFABEA5234C9FB8F1 /* GoalType.swift */; };
 		57536670B2A08CD44777661A0F636EE7 /* Goal_Post.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91D0F18D0954E8502F4C7A0FF3977271 /* Goal_Post.xcdatamodeld */; };
@@ -22,6 +23,7 @@
 		6D2D3CC404503D5C81F29B820FD4B9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		237CED8D52B66875EAC02FE1CD211969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CF4227DA2924825029D67B6FBBC2406B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6B5CB0FBBEA0A1FBDDFB82DCAD37FB3A /* CreateGoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGoalViewController.swift; sourceTree = "<group>"; };
 		5DEF9C67DFEAC3554EC732EE73153BCA /* Goal-Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goal-Post.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28382650AC25D75DB77EC4C7950DB8D /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 		B57E1E9A7FB0E0FDFABEA5234C9FB8F1 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
@@ -84,6 +86,7 @@
 		F32CFC08FFC0B773277BC04398942BF4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				6B5CB0FBBEA0A1FBDDFB82DCAD37FB3A /* CreateGoalViewController.swift */,
 				044CC0C0ED5402085F063FB5EB0B8D51 /* GoalsViewController.swift */,
 			);
 			path = Controllers;
@@ -178,6 +181,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0EAE386BC91457C439F0868F6992AF7D /* AppDelegate.swift in Sources */,
+				FC43901BCC30696E929511A57B99B154 /* CreateGoalViewController.swift in Sources */,
 				5479761FD0F30C5BDA195A9946518514 /* GoalCell.swift in Sources */,
 				8719D2C0845659528FDC7CA29C9C5097 /* GoalType.swift in Sources */,
 				57536670B2A08CD44777661A0F636EE7 /* Goal_Post.xcdatamodeld in Sources */,
