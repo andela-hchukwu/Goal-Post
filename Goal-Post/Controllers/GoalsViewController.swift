@@ -1,5 +1,6 @@
 //
-//  ViewController.swift
+//  Goals
+// GoalViewController.swift
 //  Goal-Post
 //
 //  Created by Henry Chukwu on 5/3/18.
@@ -8,18 +9,21 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class GoalsViewController: UIViewController {
 
+    // IBOutlets
+
+    @IBOutlet weak var tableView: UITableView!
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+
+    @IBAction func goalButtonWasPressed(_ sender: Any) {
     }
-
-
+    
 }
 
