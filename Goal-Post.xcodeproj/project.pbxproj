@@ -10,6 +10,7 @@
 		0EAE386BC91457C439F0868F6992AF7D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC0E2662D1CEE022A9E89FD18BB9E221 /* AppDelegate.swift */; };
 		B42DAACC4B43BE849B7A96B212AC02A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6D2D3CC404503D5C81F29B820FD4B9D5 /* Assets.xcassets */; };
 		5479761FD0F30C5BDA195A9946518514 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B28382650AC25D75DB77EC4C7950DB8D /* GoalCell.swift */; };
+		8719D2C0845659528FDC7CA29C9C5097 /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B57E1E9A7FB0E0FDFABEA5234C9FB8F1 /* GoalType.swift */; };
 		57536670B2A08CD44777661A0F636EE7 /* Goal_Post.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 91D0F18D0954E8502F4C7A0FF3977271 /* Goal_Post.xcdatamodeld */; };
 		2CB37C6E75B5ED4B12E6C83318C6B603 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CC0C0ED5402085F063FB5EB0B8D51 /* GoalsViewController.swift */; };
 		7F3181A8B7F9FDDBF5CB49F001134F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A700C72C6F6DC82A78F14D0AC43D2C /* LaunchScreen.storyboard */; };
@@ -19,10 +20,11 @@
 /* Begin PBXFileReference section */
 		BC0E2662D1CEE022A9E89FD18BB9E221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6D2D3CC404503D5C81F29B820FD4B9D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		CF4227DA2924825029D67B6FBBC2406B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		237CED8D52B66875EAC02FE1CD211969 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CF4227DA2924825029D67B6FBBC2406B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5DEF9C67DFEAC3554EC732EE73153BCA /* Goal-Post.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Goal-Post.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B28382650AC25D75DB77EC4C7950DB8D /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
+		B57E1E9A7FB0E0FDFABEA5234C9FB8F1 /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		9C522C8180CB46A064C34372039B6BED /* Goal_Post.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goal_Post.xcdatamodel; sourceTree = "<group>"; };
 		044CC0C0ED5402085F063FB5EB0B8D51 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		38FB4B82FA5E0EB42FB1C04573BE94D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -39,20 +41,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6BA1CAB9667A6E36459678A3512729B2 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		6BFE45BE8635D4B5422D15A743375F65 = {
 			isa = PBXGroup;
 			children = (
 				7DBCD7FD76E8CB04715316A7B7623E61 /* Goal-Post */,
 				9CF7288B09069B16EC8FE6274C571C4E /* Products */,
 			);
-			sourceTree = "<group>";
-		};
-		9CF7288B09069B16EC8FE6274C571C4E /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				5DEF9C67DFEAC3554EC732EE73153BCA /* Goal-Post.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		7DBCD7FD76E8CB04715316A7B7623E61 /* Goal-Post */ = {
@@ -72,6 +73,14 @@
 			path = "Goal-Post";
 			sourceTree = "<group>";
 		};
+		9CF7288B09069B16EC8FE6274C571C4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5DEF9C67DFEAC3554EC732EE73153BCA /* Goal-Post.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		F32CFC08FFC0B773277BC04398942BF4 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -80,26 +89,20 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		F51D579BB8109713F2699DEDFE31547E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				B57E1E9A7FB0E0FDFABEA5234C9FB8F1 /* GoalType.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
 		F7382CFD44F253D762AB7F46CC2892F1 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				B28382650AC25D75DB77EC4C7950DB8D /* GoalCell.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		F51D579BB8109713F2699DEDFE31547E /* Enums */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Enums;
-			sourceTree = "<group>";
-		};
-		6BA1CAB9667A6E36459678A3512729B2 /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,6 +179,7 @@
 			files = (
 				0EAE386BC91457C439F0868F6992AF7D /* AppDelegate.swift in Sources */,
 				5479761FD0F30C5BDA195A9946518514 /* GoalCell.swift in Sources */,
+				8719D2C0845659528FDC7CA29C9C5097 /* GoalType.swift in Sources */,
 				57536670B2A08CD44777661A0F636EE7 /* Goal_Post.xcdatamodeld in Sources */,
 				2CB37C6E75B5ED4B12E6C83318C6B603 /* GoalsViewController.swift in Sources */,
 			);
@@ -310,21 +314,6 @@
 			};
 			name = Release;
 		};
-		B320196CCB537B27152534E8A7E23763 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = A39EXWY942;
-				INFOPLIST_FILE = "Goal-Post/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.henry.Goal-Post";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		A8648A9F50C7758F9B441752F02209D6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -340,23 +329,38 @@
 			};
 			name = Release;
 		};
+		B320196CCB537B27152534E8A7E23763 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = A39EXWY942;
+				INFOPLIST_FILE = "Goal-Post/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.henry.Goal-Post";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76BC537423A411C950F6A62BBC8F70C2 /* Build configuration list for PBXProject "Goal-Post" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0FA9E1FD0FEE330237296E0F5F72C5E4 /* Debug */,
-				30903B15842A86F424AF34EA5155680C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		6978ED34E2ED0FFAA532C84CD5D1193B /* Build configuration list for PBXNativeTarget "Goal-Post" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				B320196CCB537B27152534E8A7E23763 /* Debug */,
 				A8648A9F50C7758F9B441752F02209D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		76BC537423A411C950F6A62BBC8F70C2 /* Build configuration list for PBXProject "Goal-Post" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0FA9E1FD0FEE330237296E0F5F72C5E4 /* Debug */,
+				30903B15842A86F424AF34EA5155680C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
