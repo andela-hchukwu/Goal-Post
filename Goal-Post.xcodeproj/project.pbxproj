@@ -16,6 +16,7 @@
 		2CB37C6E75B5ED4B12E6C83318C6B603 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 044CC0C0ED5402085F063FB5EB0B8D51 /* GoalsViewController.swift */; };
 		7F3181A8B7F9FDDBF5CB49F001134F6F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52A700C72C6F6DC82A78F14D0AC43D2C /* LaunchScreen.storyboard */; };
 		2656A601FDD08081419D56B5EE881471 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30772B6A085916B9396E115B724CA447 /* Main.storyboard */; };
+		1876BBDD6292CB1053FD03003C6450E7 /* UIViewControllerExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9AF2FC1A9A4A0D335A7D3B4C016A2C75 /* UIViewControllerExt.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		9C522C8180CB46A064C34372039B6BED /* Goal_Post.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Goal_Post.xcdatamodel; sourceTree = "<group>"; };
 		044CC0C0ED5402085F063FB5EB0B8D51 /* GoalsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalsViewController.swift; sourceTree = "<group>"; };
 		38FB4B82FA5E0EB42FB1C04573BE94D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9AF2FC1A9A4A0D335A7D3B4C016A2C75 /* UIViewControllerExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExt.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,6 +48,7 @@
 		6BA1CAB9667A6E36459678A3512729B2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				9AF2FC1A9A4A0D335A7D3B4C016A2C75 /* UIViewControllerExt.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -186,6 +189,7 @@
 				8719D2C0845659528FDC7CA29C9C5097 /* GoalType.swift in Sources */,
 				57536670B2A08CD44777661A0F636EE7 /* Goal_Post.xcdatamodeld in Sources */,
 				2CB37C6E75B5ED4B12E6C83318C6B603 /* GoalsViewController.swift in Sources */,
+				1876BBDD6292CB1053FD03003C6450E7 /* UIViewControllerExt.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

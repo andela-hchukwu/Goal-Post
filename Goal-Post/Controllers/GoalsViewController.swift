@@ -27,7 +27,8 @@ class GoalsViewController: UIViewController {
 
 
     @IBAction func goalButtonWasPressed(_ sender: Any) {
-        
+        guard let createGoalVC = storyboard?.instantiateViewController(withIdentifier: "CreateGoalViewController") else { return }
+        presentDetail(createGoalVC)
     }
     
 }
