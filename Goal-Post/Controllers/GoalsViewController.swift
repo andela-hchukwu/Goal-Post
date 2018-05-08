@@ -31,6 +31,11 @@ class GoalsViewController: UIViewController {
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        fetcCoreDataObject()
+        tableView.reloadData()
+    }
+
+    func fetcCoreDataObject() {
         self.fetch { (complete) in
             if complete {
                 if goals.count >= 1 {
@@ -40,7 +45,6 @@ class GoalsViewController: UIViewController {
                 }
             }
         }
-        tableView.reloadData()
     }
 
 
@@ -68,9 +72,42 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(goal: goal)
         return cell
     }
+
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        return true
+    }
+
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+        return .none
+    }
+
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (rowAction, indexPath) in
+            self.removeGoal(atIndexPath: indexPath)
+            self.fetcCoreDataObject()
+            tableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+
+        deleteAction.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+
+        return [deleteAction]
+    }
 }
 
 extension GoalsViewController {
+
+    func removeGoal(atIndexPath indexPath: IndexPath) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+        managedContext.delete(goals[indexPath.row])
+
+        do {
+            try managedContext.save()
+            print("successfully removed object")
+        } catch {
+            debugPrint("Could not remove: \(error.localizedDescription)")
+        }
+    }
+
     func fetch(completion: (_ complete: Bool) -> ()) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
 
