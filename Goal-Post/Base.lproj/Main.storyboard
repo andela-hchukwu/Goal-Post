@@ -111,6 +111,7 @@
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vyx-5J-tVg">
                                                                     <rect key="frame" x="0.0" y="0.0" width="50" height="25"/>
                                                                     <constraints>
+                                                                        <constraint firstAttribute="width" constant="50" id="eUz-7o-0PW"/>
                                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="50" id="zii-3i-ENt"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
@@ -131,9 +132,10 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dYh-Eu-eZq">
                                                             <rect key="frame" x="0.0" y="30" width="292" height="18"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAX-gN-5Wd">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="86.5" height="18"/>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RAX-gN-5Wd">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="40" height="18"/>
                                                                     <constraints>
+                                                                        <constraint firstAttribute="width" constant="40" id="kxK-Fw-ruD"/>
                                                                         <constraint firstAttribute="width" relation="lessThanOrEqual" constant="87" id="nLK-4H-qNw"/>
                                                                     </constraints>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
@@ -141,7 +143,7 @@
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="short Term" textAlignment="justified" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dXW-Qs-TZU">
-                                                                    <rect key="frame" x="91.5" y="0.0" width="200.5" height="18"/>
+                                                                    <rect key="frame" x="45" y="0.0" width="247" height="18"/>
                                                                     <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
