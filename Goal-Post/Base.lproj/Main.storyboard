@@ -171,17 +171,17 @@
                                                 </view>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="gfg-lh-JmU" secondAttribute="trailing" id="FyS-xp-Qqn"/>
+                                                <constraint firstAttribute="trailing" secondItem="gfg-lh-JmU" secondAttribute="trailing" id="422-wZ-6dP"/>
+                                                <constraint firstAttribute="bottom" secondItem="gfg-lh-JmU" secondAttribute="bottom" id="EUl-cq-DkG"/>
+                                                <constraint firstItem="gfg-lh-JmU" firstAttribute="top" secondItem="RdE-XI-ped" secondAttribute="top" id="Ey3-w7-LQk"/>
                                                 <constraint firstAttribute="trailing" secondItem="raS-zD-ckQ" secondAttribute="trailing" constant="8" id="LQK-hw-WXC"/>
                                                 <constraint firstItem="raS-zD-ckQ" firstAttribute="top" secondItem="RdE-XI-ped" secondAttribute="top" constant="8" id="Lhi-ay-26J"/>
-                                                <constraint firstItem="gfg-lh-JmU" firstAttribute="top" secondItem="RdE-XI-ped" secondAttribute="top" id="P9d-NO-3hW"/>
-                                                <constraint firstAttribute="bottom" secondItem="gfg-lh-JmU" secondAttribute="bottom" id="Y58-hR-Kzb"/>
+                                                <constraint firstItem="gfg-lh-JmU" firstAttribute="leading" secondItem="RdE-XI-ped" secondAttribute="leading" id="XHy-RY-sjB"/>
                                                 <constraint firstItem="jbl-sm-uEg" firstAttribute="leading" secondItem="RdE-XI-ped" secondAttribute="leadingMargin" constant="10" id="cWd-me-tKG"/>
                                                 <constraint firstItem="raS-zD-ckQ" firstAttribute="leading" secondItem="jbl-sm-uEg" secondAttribute="trailing" constant="10" id="dcG-iD-axL"/>
                                                 <constraint firstAttribute="bottom" secondItem="raS-zD-ckQ" secondAttribute="bottom" constant="8" id="kXf-S8-ubp"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="jbl-sm-uEg" secondAttribute="bottom" id="svy-f0-Ebm"/>
                                                 <constraint firstItem="jbl-sm-uEg" firstAttribute="top" secondItem="RdE-XI-ped" secondAttribute="topMargin" id="vtH-Vx-hII"/>
-                                                <constraint firstItem="gfg-lh-JmU" firstAttribute="leading" secondItem="RdE-XI-ped" secondAttribute="leading" id="xcl-IU-BUo"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
